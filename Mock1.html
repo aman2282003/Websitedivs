@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOCK EVALUATION</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .grand-father{
+            width:100%;
+            border: dashed black 1px;
+            height:600px;
+            display:flex;
+        }
+        .father{
+            width:48%;
+            margin:15px;
+            text-align: left;
+            border: dashed black 1px;
+        }
+        .uncle{
+            width:48%;
+            margin:15px;
+            border: dashed black 1px;
+            padding:10px;
+        }
+        .personoo{
+            margin:25px;
+            width:60%;
+            height:88%;
+            display: flex;
+            border: dashed black 1px;
+        }
+        .child{
+            height:90%;
+            margin:15px;
+            width:17%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        .inner{
+            font-size: 40px;  
+            border: dashed black 1px;
+            margin:10px;
+        }
+        .uncle> .person{
+            margin:15px;
+            border: dashed black 1px;
+        }
+        .childone{
+            margin: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        .childone>div{
+            height:50px;
+            font-size:40px ;
+            margin: 15px;
+            border: dashed black 1px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="grand-father">Grandfather
+        <div class="father">Father
+            <div class="personoo">Person-1
+                <div class="child"> child-1</div>
+                <div class="child">child-2</div>
+                <div class="child" style="padding: 5px;">child-3
+                    <div class="inner">1</div>
+                    <div class="inner">2</div>
+                    <div class="inner">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="uncle">Uncle
+            <div class="person"> Person-1</div>
+            <div class="person"> Person-2
+                <div class="childone"> Child-1</div>
+                <div class="childone" style="padding:10px;">Child-2
+                    <div  style="background-color: orange; ;">1</div>
+                    <div  style="background-color: white; color: blue;">2</div>
+                    <div style="background-color: green;">3</div>
+                </div>
+                <div class="childone">Child-3</div>
+            </div>
+            <div class="person">Person-3</div>
+        </div>
+    </div>
+</body>
+</html>
